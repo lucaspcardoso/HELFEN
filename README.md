@@ -23,4 +23,4 @@ Agradecemos a todas as pessoas que contribuíram para este projeto. As contribui
 
 - [Laura de Oliveira](#): Descrição breve das contribuições.
 - [Leticia Santos Machado](#): Descrição breve das contribuições.
-- [Mariellen Cristene Palma](#): Descrição breve das contribuições.
+- [Marielle Cristene Palma](#): Descrição breve das contribuições.
