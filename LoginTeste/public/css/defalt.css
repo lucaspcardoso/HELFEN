@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Arimo;
+    src: url(../fonts/Arimo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url(../fonts/Assistant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(../fonts/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+* {
+    font-family: Assistant;
+}
+
+/* Fontes */
+
+.logo {
+    height: 10vh;
+}
+
+.assistant {
+    font-family: Assistant;
+}
+
+.nunito {
+    font-family: Nunito;
+}
+
+.bebas {
+    font-family: Bebas;
+}
+
+.arimo {
+    font-family: Arimo;
+}
+
+.aleo {
+    font-family: Aleo;
+}
+
+.image {
+    height: 10vh;
+}
+
+.b-600 {
+    font-size: 20px;
+    font-weight: 600;
+}

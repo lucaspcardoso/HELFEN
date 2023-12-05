@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Arimo;
+    src: url(../fonts/Arimo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url(../fonts/Assistant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(../fonts/Aleo-Regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Assistant;
+}
+
+/* Fontes */
+
+.logo {
+    height: 10vh;
+}
+
+.assistant {
+    font-family: Assistant;
+}
+
+.bebas {
+    font-family: Bebas;
+}
+
+.arimo {
+    font-family: Arimo;
+}
+
+.aleo {
+    font-family: Aleo;
+}
+
+.image {
+    height: 10vh;
+}
+
+/* Imagem */
+
+.icon-search,
+.photo-user {
+    height: 8vh;
+}
+
+.photo-user {
+    border-radius: 50%;
+}
+
+.arrow {
+    height: 3vw;
+    filter: invert(50%);
+    cursor: pointer;
+}
+
+/* Menu */
+.container-menu {
+    border-bottom: 1px solid #aeaeae;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 2vw 0vw 2vw;
+}
+
+/* Barra superior */
+
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20vw 0vw 20vw;
+}
+
+.edit-text {
+    font-size: 1.5rem;
+}
+
+/* Edições */
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 0 20vw 0vw 20vw;
+}
+
+.card {
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: #aeaeae solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-inputs {
+    border: 1px solid #aeaeae;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inputs:hover {
+    border: 1px solid #696969;
+    color: #696969;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.input {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #1c5f66;
+    transition: 0.2s ease-in-out;
+    width: 50vw;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 2px solid #134a50;
+}
+
+/* Botão */
+
+.container-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: #76cad4;
+    padding: 10px 30px;
+    font-size: 14px;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.button:hover {
+    background-color: #539da5;
+    padding: 10px 40px;
+}
+
+.photoLabel{
+    border: 2px solid #aeaeae;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #aeaeae;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.photo{
+    display: none;
+}
+
+.photoView{
+    border: 1px solid #aeaeae;
+    border-radius: 1000px;
+    object-fit: cover;
+    width: 15vh;
+    height: 15vh;
+}

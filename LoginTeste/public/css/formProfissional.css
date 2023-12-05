@@ -1,0 +1,18 @@
+.inputProf{
+    outline: none;
+    margin-bottom: 2vh;
+    padding: 12px 30px;
+    border: #aeaeae 1px solid;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+    font-family: Assistant;
+}
+
+.btnProf{
+    cursor: pointer;
+}
+
+.showPopUpProfissional{
+    opacity: 1;
+}

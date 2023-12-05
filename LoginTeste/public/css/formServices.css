@@ -1,0 +1,266 @@
+.left,
+.right {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right {
+    justify-content: start;
+}
+
+.containerAll {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+h4.title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 5vh;
+}
+
+#desc {
+    outline: none;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #aeaeae;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteinerLeft,
+.containerRight {
+    width: 100%;
+}
+
+.containerInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.containerInputsPhoto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photoInput {
+    display: none;
+}
+
+.photoLabel {
+    font-size: 0.8rem;
+    width: max-content;
+    border: 1px solid #aeaeae;
+    color: #a7a7a7;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.containerInput input[type="text"],
+.containerInput input[type="number"],
+.containerInput select.input {
+    outline: none;
+    margin-bottom: 2vh;
+    padding: 12px 30px;
+    border: #aeaeae 1px solid;
+    width: 90%;
+    border-radius: 10px;
+    color: black;
+    font-family: Assistant;
+}
+
+#inputsEndereço {
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+}
+
+.containerInput input::placeholder {
+    color: #a7a7a7;
+    font-weight: bold;
+}
+
+.containerAllPhoto {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.containerPhoto {
+    margin-top: 2vh;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    position: relative;
+    width: max-content;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+.noView {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.containerImg {
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    margin-top: 2vh;
+}
+
+.containerImg img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover !important;
+    width: 100%;
+}
+
+#btnAdd {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff00002f;
+    /* Cor de fundo com opacidade */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Transição de fade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 0;
+    /* O ícone estará oculto inicialmente */
+    transition: opacity 0.3s ease;
+    filter: invert(100);
+    /* Transição de fade para o ícone */
+}
+
+/* checkbox */
+.fontCheckbox {
+    font-weight: bold;
+    color: #a7a7a7;
+}
+
+.containerCheckbox {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCheckbox input[type="checkbox"] ~ label {
+    font-weight: bold;
+    color: #a7a7a7;
+}
+
+/* bottuns */
+
+.containerButton {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.containerButtonRight {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.containerButton a,
+.containerButton div button[type="reset"] {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fffacd;
+    color: #f0d253;
+}
+
+.containerButton a {
+    padding: 5px 30px;
+    font-size: 1.2rem;
+}
+
+.containerButton div button[type="reset"] {
+    padding: 10px 0px;
+    width: 20%;
+    font-size: 1.3rem;
+    border: none;
+    margin-right: 2vw;
+}
+
+.containerButton div button.next {
+    width: 30%;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #6ba9cc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #aeaeae;
+}
+
+textarea::placeholder {
+    font-weight: 600;
+    color: #aeaeae;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 769px) {
+    .containerAll {
+        flex-direction: column;
+    }
+
+    .containerInput {
+        align-items: center;
+    }
+}

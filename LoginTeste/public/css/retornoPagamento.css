@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+i {
+    font-size: 2rem;
+    color: #f0d253;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.btnEnviar {
+    padding: 12px 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #53b3dc;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.containerAprovade {
+    background-color: #53b3dc;
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+}
+
+.containerInfoAprovade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerInfoAprovade p {
+    margin-right: 10vw;
+}
+
+.containerAprovade img {
+    margin-left: 10vw;
+}
+
+.containerAprovade h1 {
+    font-size: 1.2rem;
+}
+
+.imageCheck {
+    height: 10vh;
+}
+
+.textBranco {
+    color: white;
+}
+
+.pagAprovado {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerTitles {
+    padding: 0px 0px 50px 0px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.progress {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerCheck,
+.containerCheckWhite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 650;
+    font-size: 0.9rem;
+}
+
+.containerCheck {
+    color: #00472a;
+}
+
+.containerCheckWhite {
+    color: white;
+}
+
+.containerCheckWhite img {
+    height: 6vh;
+    filter: invert(100);
+    margin: 0;
+    margin-right: 5px;
+}
+
+.containerCheck img {
+    height: 6vh;
+    margin: 0;
+    margin-right: 5px;
+    filter: invert(21%) sepia(16%) saturate(2903%) hue-rotate(112deg)
+        brightness(97%) contrast(104%);
+}
+
+.margin {
+    margin: 15px 10vw 0px 10vw;
+}
+
+.containerMargin {
+    line-height: 1.8;
+    padding: 0 0 15px 0;
+}
+
+.containerMargin p {
+    font-size: 1.3em;
+}
+
+p.text,
+span.text {
+    font-size: 1rem;
+    line-break: anywhere;
+    color: #9f9f9f;
+}
+
+.containerProduct {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #aeaeae;
+}
+
+.product {
+    font-size: 1rem;
+}
+
+p.bold,
+span.bold,
+div.bold {
+    font-weight: bold;
+}
+
+.logoStyle {
+    height: 15vh;
+}
+
+.containerDescricaoProduto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.containerAvaliacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin-right: 2%;
+    padding: 30px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.infoProduct {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    padding: 30px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.containerColunas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna {
+    padding: 10px 15%;
+    width: 50%;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.tgreen {
+    color: #018001;
+}
+
+.rating-container {
+    text-align: center;
+}
+
+.rating-stars {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.star {
+    color: #ccc;
+    margin: 0 0.2em;
+}
+
+.star:hover,
+.star.active {
+    color: #ffd700 !important;
+}
+
+.none {
+    display: none !important;
+}
+
+@media screen and (max-width: 360px) {
+    .containerAprovade .logoStyle {
+        margin-left: 0px;
+    }
+
+    .containerDescricaoProduto {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .containerAvaliacao,
+    .infoProduct {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logoStyle {
+        height: 7vh;
+    }
+}

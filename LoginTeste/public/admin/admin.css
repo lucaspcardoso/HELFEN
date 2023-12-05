@@ -1,0 +1,521 @@
+ul.menu {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100vh;
+    padding-right: 40px;
+    position: fixed;
+    border-right: 1px solid #aeaeae;
+}
+
+.navMenuAdmin li.containerImgLI {
+    margin-left: -5;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.navMenuAdmin a.containerImg {
+    display: flex;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.navMenuAdmin a.containerImg p {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+.navMenuAdmin a img {
+    height: 8vh;
+}
+
+/* Drops */
+li.container-drop {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+    margin-bottom: 20px;
+}
+
+li.container-drop div.containerElementsDrop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #979797;
+    font-weight: 600;
+}
+
+li.container-drop div.containerElementsDrop div span {
+    margin-left: 1vw;
+}
+
+.submenu {
+    transition: ease-in-out 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 1vh;
+}
+
+.submenu li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-left: 2px solid #b0b0b0;
+    margin-left: 5px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.submenu li.active {
+    border-left: 2px solid black;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+.open {
+    opacity: 1;
+    max-height: 20vh;
+}
+
+.logout {
+    border: none;
+    background-color: transparent;
+    color: #979797;
+    font-weight: 600;
+}
+
+/* View */
+main {
+    margin-left: 22vw;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main section div.containerCard {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 1px #aeaeae solid;
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 17vw;
+}
+
+.containerCardSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main section.containerCardsInfos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+main section div.containerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 1vw;
+}
+
+.user {
+    background-color: #ffe8ad;
+}
+
+.star {
+    background-color: #cbe5fe;
+}
+
+.work {
+    background-color: #d2fdcb;
+}
+
+.gray {
+    color: #979797;
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin-top: 0;
+}
+
+main section div.containerContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    line-height: 1;
+}
+
+.top {
+    margin-top: 1vh;
+}
+
+/* filter */
+.filtro {
+    opacity: 0;
+    max-height: 0;
+    transition: ease-in-out 0.2s;
+}
+
+.openFilter {
+    opacity: 1;
+    max-height: 20vh;
+}
+
+section.filter span.gray {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 7vw;
+    font-size: 1vw;
+    border: 1px solid #aeaeae;
+    padding: 5px 10px;
+}
+
+div.ContainerFormFilter {
+    margin-top: 1vh;
+    width: 100%;
+}
+
+div.ContainerFormFilter form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+div.ContainerFormFilter form:first-child {
+    margin-left: 10px;
+}
+
+div.ContainerFormFilter input,
+div.ContainerFormFilter select {
+    padding: 1vh 1vw;
+    border: #aeaeae 1px solid;
+    border-radius: 10px;
+    color: black;
+    width: 20vw;
+    margin-right: 5vw;
+}
+
+div.ContainerFormFilter input::placeholder {
+    color: #a7a7a7;
+}
+
+div.ContainerFormFilter input:focus {
+    outline: none;
+}
+
+/* Select */
+
+.containerTableTop {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.6vw 1vh;
+    width: 100%;
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+}
+
+.containerTableFirtBlock {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+}
+
+.containerTableFirtBlock div {
+    display: flex;
+    width: 30%;
+}
+
+.containerTableFirtBlock div:first-child {
+    margin-left: 3vw;
+}
+
+.containerTableTop .bold {
+    font-size: 1rem;
+}
+
+.containerTableSecondBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* Paginação */
+
+.pagination {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* view Register */
+
+div.containerAllRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    width: 100%;
+}
+
+.coluna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+}
+
+.coluna:first-child {
+    margin-right: 5vw;
+}
+
+div.containerImgView {
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    width: 50vh;
+    height: 50vh;
+}
+
+div.containerImgView img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.containerTitle h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+form.containerInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerInput input[type="text"],
+.containerInput input[type="password"],
+.containerInput input[type="email"],
+.containerInput select.input {
+    margin-bottom: 2vh;
+    padding: 12px 30px;
+    border: #aeaeae 1px solid;
+    width: 50%;
+    border-radius: 10px;
+    color: black;
+    font-family: Assistant;
+}
+
+.containerInput input:focus {
+    outline: #aeaeae 1px solid;
+}
+
+.ajustePosiotion {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: start !important;
+    margin-top: 5vh;
+}
+
+.containerInput input::placeholder {
+    color: #a7a7a7;
+    font-weight: bold;
+}
+
+.photoInput {
+    display: none;
+}
+
+.photoLabel {
+    width: 50%;
+    border: 1px solid #aeaeae;
+    color: #a7a7a7;
+    font-weight: bold;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.photoInput:hover + .photoLabel {
+    border: #aeaeae 2px solid;
+}
+
+.containerButton {
+    margin-top: 2vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.btnSubmit,
+.btnClear {
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.btnSubmit {
+    background-color: #6ba9cc;
+    padding: 5px 15px;
+}
+
+.btnClear {
+    background-color: #aaaaaa;
+    padding: 2px 10px;
+}
+
+.containerButtonAjuste {
+    justify-content: start !important;
+}
+
+.buttonDistance {
+    margin-right: 10px;
+}
+
+.containerIconsAction {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerIconsAction a:first-child {
+    margin-right: 5px;
+}
+
+.containerIconsAction div,
+.containerIconsAction a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerIconsAction img {
+    filter: invert(100);
+}
+
+.edit {
+    background-color: #ffc329;
+}
+
+.delete {
+    background-color: #78a55a;
+}
+
+/* #3498db */
+/* Adicione outras regras de estilo conforme necessário */
+
+.popUpContainer {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.popUpPortifolio {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Cflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.button-fecha {
+    background-color: #aeaeae;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 22px;
+    margin-left: 10px;
+}
+
+.button-envia {
+    margin-right: 10px;
+    background-color: #6ba9cc;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.showPop {
+    display: flex !important;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* Adicione outras regras de estilo conforme necessário */
